@@ -4,6 +4,9 @@ const router = Router()
 
 router.post("/display", (req, res) => {
   console.log(req.body.msg)
+  res.json({
+    msg: req.body.msg
+  })
 })
 
 module.exports = {

@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(cors())
 app.use(morgan('dev'))
 
-app.use('/', router)
+app.use('/', router.router)
 
 app.listen(process.env.PORT, () => {
   console.log("Server Online")
