@@ -39,7 +39,6 @@ const getApplications = async (req, res) => {
 const getOneApplication = async (req, res) => {
   try {
     const data = await applicationSchema.findOne({ refId: req.params.refId })
-    console.log(data)
     res.json({
       status: true,
       exitCode: 0,
